@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <meta property="og:title" content="I-CTRL: Imitation to Control Humanoid Robots Through Bounded Residual Reinforcement Learning"/>
-  <meta property="og:url" content="https://evm7.github.io/I-CTRL/"/>
+  <meta property="og:title" content="ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <title>DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control
+  <title>ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling
 
 </title>
   
@@ -53,9 +52,9 @@
     <div class="container is-max-widescreen">
       <!-- <div class="columns is-centered"> -->
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control</h1>
+          <h1 class="title is-1 publication-title">ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling</h1>
           <div class="is-size-3 publication-authors">
-            IEEE International Conference on Robotics and Automation (ICRA), 2026
+            IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
           </div>
         </div>
     </div>
@@ -70,11 +69,10 @@
         <div class="column has-text-centered">
 		<div class="is-size-5 publication-authors">
 		  <span class="author-block">
-		    Yuanchuan Lai<sup>1</sup>, 
-		    Qing Gao<sup>1,*</sup>, 
-		    Ziyan Liang<sup>1</sup>, 
-		    Xianfeng Cheng<sup>1</sup>, 
-		    Junjie Hu<sup>2</sup>, 
+		    Yuanchuan Lai<sup>1</sup>,
+		    Qing Gao<sup>1,*</sup>,
+		    Ziyan Liang<sup>1</sup>,
+		    Junjie Hu<sup>2</sup>,
 		    Zhaojie Ju<sup>3</sup>
 		  </span> 
 		</div>
@@ -85,28 +83,6 @@
           
           <div class="column has-text-centered">
             <div class="publication-links">
-
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="static/figures/Dextele.pdf" target="_blank"
-                class="external-link button is-normal is-rounded">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Paper</span>
-              </a>
-             </span>
-
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/ZaynLeung/Robotelop" target="_blank"
-                class="external-link button is-normal is-rounded">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Code</span>
-              </a>
-             </span>
 
               <!-- PDF Link. -->
               <!-- </span> -->
@@ -194,7 +170,7 @@
           <p style="margin-bottom: 30px">
  
         <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/videos/ICRA_0918_F.mp4"
+          <source src="static/figures/project_x264.mp4"
           type="video/mp4">
         </video>
         </p>
@@ -214,7 +190,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-In dual-arm dexterous teleoperation, crossplatform generalization of motion retargeting and interactivity of grasping are crucial. However, the heterogeneity of robotic architectures and the wide variety of grasping objects pose significant challenges to achieving precise motion retargeting and compliant grasping in dual-arm dexterous teleoperation. To address these challenges, a dual-arm dexterous teleoperation system (DexTele) is proposed based on motion retargeting and adaptive force control. First, a vision-based motion retargeting module is designed to generate preliminary robot motions from human images. In this module, a motion-graph encoder and latent optimization are proposed for precise and convenient cross-platform motion retargeting. Second, an adaptive grasping module is designed to achieve compliant grasping. This module combines a vision-language model (VLM) with model predictive control (MPC), allowing the system to predict the required grasping force for a target object and perform gradient-based online optimization. Finally, extensive experiments demonstrate that the DexTele achieves precise motion retargeting and compliant grasping with generalization across multiple robot platforms.
+Learning robot dexterous manipulation from human manipulation videos requires reliably retargeting human intent to executable robot actions while maintaining stable hand–object contact, which remains a key challenge in embodied intelligence. Existing retargeting methods often ignore explicit contact modeling or rely on reinforcement learning, resulting in limited accuracy and generalization. To address this, we propose ObjRetarget, a human-to-robot motion retargeting framework for learning robot dexterous manipulation from human videos, which integrates anthropomorphic arm trajectory constraints with structured hand–object geometric modeling. For arm motion, reference trajectories extracted from human videos are used for initialization, followed by anthropomorphic constraints and redundancy-aware optimization to generate natural and accurate movements. For hand manipulation, ObjRetarget represents multi-finger contacts using polytope clusters and preserves contact structure through geometric invariants to improve stability. Experiments on real robots show that ObjRetarget improves manipulation success rates and contact stability across multiple dexterous tasks, and generalizes well to different demonstrations, object poses, and task settings.
           </p>
         </div>
       </div>
@@ -228,8 +204,8 @@ In dual-arm dexterous teleoperation, crossplatform generalization of motion reta
     <div class="container">
 
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/ICRA_Figure5.png" 
-             alt="Motivation of our model"
+        <img src="static/figures/Fig444 (1).png"
+             alt="Visualization of ObjRetarget on six real-world dexterous manipulation tasks"
              style="width:55%; height:auto; margin:auto;">
       </div>
 
@@ -245,10 +221,10 @@ In dual-arm dexterous teleoperation, crossplatform generalization of motion reta
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-         <h2 class="title is-3"> Demonstration of motion retargeting across multiple robot platforms. </h2> 
+         <h2 class="title is-3"> Visualization of ObjRetarget on six real-world dexterous manipulation tasks. </h2>
         <div class="content has-text-justified">
           <p>
-From top to bottom, the six rows represent: the human demonstrator, the mesh rendering of the human demonstrator, the YuMi robot in simulation, the Unitree H1 robot in simulation, the RMC-DA robot in simulation, and the RMC-DA robot in a real-world environment.          </p>
+For each task, the top row shows the human demonstration and the bottom row shows the corresponding robot execution. From left to right: (a) Sequential Place: sequentially placing two cartons onto a tray, (b) Soft Place: grasping a plush toy and placing it into a basket, (c) Drawer Close: placing a medicine box into an open drawer and closing it, (d) Fruit Place: transferring a mango from the table to a fruit basket, (e) Pour Water: picking up a bottle, pouring water into a container, and returning it, and (f) Bimanual Place: bimanual grasping of an apple and a lemon followed by synchronized placement.          </p>
         <div class="columns is-centered has-text-centered">
             <div class="item">
           <p style="margin-bottom: 30px">
@@ -274,7 +250,7 @@ From top to bottom, the six rows represent: the human demonstrator, the mesh ren
     <div class="container">
 
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/ICRA_Figure1.png" alt="Architecture of our I-CTRL"/>
+        <img src="static/figures/Fig2222.png" alt="Overview of the object-aware motion retargeting framework"/>
       </div>    
   </div>
 </div>
@@ -287,9 +263,9 @@ From top to bottom, the six rows represent: the human demonstrator, the mesh ren
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"> Overview of the dual-arm dexterous teleoperation system.</h2>
+        <h2 class="title is-3"> Overview of the object-aware motion retargeting framework.</h2>
           <p>
-Human motions are first captured via FrankMocap and processed into 3D body and hand poses. The extracted hand and arm motions are retargeted to the corresponding movements of the robot’s hand and arm. The robot’s arm angles are directly mapped to the robot, while the hand angles are adjusted by the adaptive grasping module before executing the physical grasping.
+Part (a) illustrates the extraction of human 3D body and hand poses from an RGB-D video, along with the detection and tracking of task-relevant objects to generate a reference plan. Part (b) presents arm trajectories refined based on object poses and anthropomorphic constraints. Part (c) shows hand motions optimized at contact points using polyhedral clusters. Part (d) depicts a unified temporal scheduler that synchronizes arm and hand motions for coordinated dual-arm execution.
           </p>
         </div>
       </div>
@@ -303,9 +279,9 @@ Human motions are first captured via FrankMocap and processed into 3D body and h
       <h2 class="title">BibTeX</h2>
       <pre><code>
 @article{
-  title={DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control},
-  author={Yuanchuan Lai, Qing Gao, Ziyan Liang, Xianfeng Cheng, Junjie Hu, Zhaojie Ju},
-  journal={ICRA},
+  title={ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling},
+  author={Yuanchuan Lai, Qing Gao, Ziyan Liang, Junjie Hu, Zhaojie Ju},
+  journal={IROS},
   year={2026}
 }</code></pre>
     </div>
